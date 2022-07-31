@@ -1,11 +1,13 @@
-* {
-    border: 0.1px solid red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* * {
+    border: 1px solid red;
+} */
 
 body {
     height: 100vh;
-    overflow: hidden;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* remove classic link 'looks' */
@@ -20,7 +22,6 @@ ul {
 }
 
 /* !HEADER SECTION! */
-/* Top header  */
 header {
     display: flex;
     justify-content: space-between;
@@ -32,45 +33,80 @@ header {
 .header-top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
 }
 
 .header-bottom {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
+
+    margin: 100px 0px;
 }
 
-.header-top .right {
+.header-br {
+    width: 450px;
     display: flex;
-
-}
-
-.header-bottom h1 {
-    margin: 0;
-}
-
-.header-bottom p {
-    margin: 0;
-    flex-shrink: 0;
-}
-
-.header-bottom .right img {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background: #6d747d;
+    color: #E5E7EB;
+
+}
+.header-tr {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.header-bottom .left {
-    width: 300px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
 }
+
+.header-link,
+.subtext {
+    font-size: 14px;
+    font-weight: 100;
+    color: #E5E7EB;
+}
+
+.sign-up {
+    color: #F9FAF8;
+    font-weight: 600;
+    background-color: #3882F6;
+    padding: 6px 24px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+
+.header-title {
+    margin: 0px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.subtext {
+    margin-top: 0px;
+}
+
+
+.header-bl {
+    width: 350px;
+}
+
 /* target lhs & rhs of header */
 
-.header-top .left,
-.header-bottom .left {
-    padding-left: 40px;
+.header-top {
+    padding-left: 150px;
+    padding-right:150px;
 }
 
-.header-top .right,
-.header-bottom .right {
-    padding-right: 40px;
+.header-bottom {
+    padding-left: 150px;
+    padding-right: 150px;
 }
