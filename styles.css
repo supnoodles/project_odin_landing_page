@@ -1,0 +1,76 @@
+* {
+    border: 0.1px solid red;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* remove classic link 'looks' */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* !HEADER SECTION! */
+/* Top header  */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #1F2937;
+
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.header-top .right {
+    display: flex;
+
+}
+
+.header-bottom h1 {
+    margin: 0;
+}
+
+.header-bottom p {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.header-bottom .right img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom .left {
+    width: 300px;
+}
+/* target lhs & rhs of header */
+
+.header-top .left,
+.header-bottom .left {
+    padding-left: 40px;
+}
+
+.header-top .right,
+.header-bottom .right {
+    padding-right: 40px;
+}
